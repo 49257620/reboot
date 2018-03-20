@@ -11,6 +11,6 @@ times = int('5')
 result = 0
 
 for i in range(1, times + 1):
-    result += int(str(inputStr) * i)
+    result += int(inputStr * i)
 
 print(result)

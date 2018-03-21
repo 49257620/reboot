@@ -18,7 +18,7 @@ def getseq2(cnt):
 total = 0;
 
 for i in range(1, 21):
-    #print(str(getseq1(i)) + '/' + str(getseq2(i)))
+    # print(str(getseq1(i)) + '/' + str(getseq2(i)))
     total += getseq1(i) / getseq2(i)
 
 print(total)

@@ -7,17 +7,17 @@
 2.程序源代码：
 """
 
-
 l = []
 for i in range(1, 51):
     l.append(i)
 
-# print(l)
+print(l[0:2])
 
 
 def remove3(l):
     if len(l) >= 3:
         # print('a', len(l))
+        '''
         i0 = l[0]
         i1 = l[1]
         l.remove(l[2])
@@ -26,10 +26,16 @@ def remove3(l):
         l.append(i0)
         l.append(i1)
         # print(l)
-        return remove3(l)
+        '''
+
+        return remove3(l[3:] + l[0:2])
     elif len(l) == 2:
         l.remove(l[0])
         return l
 
 
-print(remove3(l)[0])
+def rm3(l):
+    return l if len(l) == 2 else remove3(l[3:] + l[0:2])
+
+
+print(rm3(l)[0])

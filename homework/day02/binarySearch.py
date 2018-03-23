@@ -12,8 +12,13 @@ def binary_search(li, find):
     high = len(li) - 1
     while low <= high:
         mid = (low + high) // 2
+        # 判断中位 ，低位，高位 是否等于查找数值，可以减少循环次数
         if li[mid] == find:
             return mid
+        elif li[low] == find:
+            return low
+        elif li[high] == find:
+            return high
         elif li[mid] > find:
             high = mid - 1
         else:

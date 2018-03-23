@@ -10,6 +10,11 @@ str = """你好，测试
 换行回车
 在写一行！"""
 
-fp = open("C:/test.txt", 'w',-1,'utf-8')
+fp = open("C:/test.txt", 'w', -1, 'utf-8')
 fp.write(str)
+fp.close()
+
+fp = open("C:/test.txt", 'r', -1, 'utf-8')
+
+print(fp.read())
 fp.close()

@@ -14,9 +14,19 @@ print(time.asctime(time.gmtime(time.time())))
 
 
 start = time.time()
-for i in range(5):
+for i in range(1):
     print(i+1)
     time.sleep(1)
     end = time.time()
 
 print(end - start)
+
+print('*'*20)
+
+start = time.clock()
+print(start)
+for i in range(5):
+    print(i+1)
+    time.sleep(0.5)
+end = time.clock()
+print('different is %6.3f' % (end - start))

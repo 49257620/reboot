@@ -6,18 +6,18 @@ my_dict = {'I': 5, 'w': 8, 'a': 18, 's': 20, 'n': 17, 'o': 24, 't': 23, 'd': 13,
            'T': 1}
 
 items = list(my_dict.items())
-len = len(items)
+nnn = len(items)
 
-for i in range(len - 1):
-    for j in range(len - 1 - i):
+for i in range(nnn - 1):
+    for j in range(nnn - 1 - i):
         if items[j][1] > items[j + 1][1]:
             items[j], items[j + 1] = items[j + 1], items[j]
 
 print(items)
 """
 
-for j in range(len - 1):
-    for idx in range(len - 1 - j):
+for j in range(nnn - 1):
+    for idx in range(nnn - 1 - j):
         if items[idx][1] > items[idx + 1][1]:
             items[idx], items[idx + 1] = items[idx + 1], items[idx]
 """

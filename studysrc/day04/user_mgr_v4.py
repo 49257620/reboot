@@ -289,6 +289,7 @@ def login():
         for k, v in users.items():
             if user_name == v['name'] and user_tel == v['tel']:
                 login_flag = True
+                break
         if login_flag:
             break
         else:

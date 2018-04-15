@@ -1,0 +1,4 @@
+{{
+    hots : {host}
+    port : {port}
+}}

@@ -17,4 +17,8 @@ pip install Twisted-17.9.0-cp36-cp36m-win32.whl
 
 pip install Scrapy-1.5.0-py2.py3-none-any.whl
 
+scrapy crawl baidutop
+scrapy shell
+scrapy crawl baidutop -o data.json -t json
+
 """

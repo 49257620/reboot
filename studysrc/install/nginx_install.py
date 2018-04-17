@@ -15,6 +15,9 @@ sudo systemctl start nginx
 停止
 sudo systemctl stop nginx
 
+重新加载
+sudo nginx -s reload
+
 
 如果您正在运行防火墙，请运行以下命令以允许HTTP和HTTPS通信：
 sudo firewall-cmd --permanent --zone=public --add-service=http
@@ -23,6 +26,9 @@ sudo firewall-cmd --reload
 
 如果想在系统启动时启用Nginx。请输入以下命令：
 sudo systemctl enable nginx
+
+配置文件
+cd /etc/nginx/conf.d/
 
 
 """

@@ -9,4 +9,11 @@ D:\app\oracle\product\11.2.0\client_1\bin;C:\Program Files (x86)\Python36-32\Scr
 
 import cx_Oracle as orcl
 
-orcl.connect('hicuat/hicuat@SINODB')
+conn = orcl.connect('hicis/hicis@sinodb')   #用自己的实际数据库用户名、密码、主机ip地址 替换即可
+curs=conn.cursor()
+sql='SELECT * FROM prpcmain where rownum<10' #sql语句
+rr=curs.execute (sql)
+row=curs.fetchone()
+print(row)
+curs.close()
+conn.close()

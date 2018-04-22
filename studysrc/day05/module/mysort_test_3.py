@@ -3,7 +3,8 @@
 # author = ‘LW’
 
 # from mysort import *
-from  mypackage.mysort import fun_bubble
+from mypackage.mysort import fun_bubble
+
 li_1 = [5, 4, 3, 2, 1]
 fun_bubble(li_1)
 

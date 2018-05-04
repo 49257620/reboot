@@ -1,13 +1,13 @@
 INSERT INTO PRPDEPOLICYCONF (PRODCUTCODE, KEY, E_CODE, TYPE, POLICY_TYPE, IF_EMAIL, SIGN, EMAIL_MSG, EMAIL_HEAD, SHORT_MSG, CLAUSES, BASE_INFO_SQL, R1_USE_YN, R1_SQL, R2_USE_YN, R2_SQL, R3_USE_YN, R3_SQL, R4_USE_YN, R4_SQL, R5_USE_YN, R5_SQL) VALUES
 ('P292018JTJJ0005',
 'E01',
-'COTRAC',
+'COTRACJT',
 'A',
-'COTRAC',
+'COTRACJT',
 '1',
 'SM2',
 '尊敬的{custName}:<br/>&nbsp;&nbsp;&nbsp;&nbsp;感谢您选择现代财产保险！您投保的保单号为：{policyNo}的保单已经投保成功，附件中是电子保单，请查收!<br/>&nbsp;&nbsp;&nbsp;&nbsp;欢迎您登陆我公司官网www.hi-ins.com.cn查询或拨打客服电话4006080808查询!',
-'现代财产保险户外人身意外伤害保险电子保单',
+'现代财产保险骑行险电子保单',
 '感谢您选择现代财产保险！您的保单号为：{policyNo}！欢迎您登陆我公司官网www.hi-ins.com.cn查询，或拨打客服电话4006080808查询！'
 , null,
 'select a.policyno V1 ,
@@ -17,7 +17,7 @@ INSERT INTO PRPDEPOLICYCONF (PRODCUTCODE, KEY, E_CODE, TYPE, POLICY_TYPE, IF_EMA
         c.POSTADDRESS V5,
         c.POSTCODE V6,
         ''法定'' V7,
-        ''户外人身意外伤害保险 电子保单'' V8,
+        ''骑行险 电子保单'' V8,
         (a.ENDDATE - a.STARTDATE+1) V9,
         D.DESTINATIONAREA V10,
         TO_CHAR(a.STARTDATE,''YYYY'')||''年''||TO_CHAR(a.STARTDATE,''MM'')||''月''||TO_CHAR(a.STARTDATE,''DD'')||''日'' V11,
@@ -39,9 +39,7 @@ INSERT INTO PRPDEPOLICYCONF (PRODCUTCODE, KEY, E_CODE, TYPE, POLICY_TYPE, IF_EMA
         '''' V27,
         '''' V28,
         '''' V29,
-        ''提供24小时紧急救援服务，保障全面，让您无忧出行。
-24小时救援热线电话：0123456789，9876543210
-请存入手机通讯录，以备不时之需。'' V30
+        '''' V30
  from prpcmain a ,prpcinsured c,PrpCtravelInfo D
  where a.policyno =''{policyNo}''
  and a.policyno = c.policyno

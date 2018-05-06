@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>各种基本表单</title>
+    </head>
+        <!-- 我是注释 -->
+        我是内容
+        <form action="" method="">
+            用户：
+            <input type="text" name="name" value="LL"/><br/>
+            密码：
+            <input type="password" name="password" value="1234"/><br/>
+            性别：
+            <input type="radio" name="sex" value="1" checked="checked"/> 男
+            <input type="radio" name="sex" value="0" /> 女
+            <br/>
+            生日：
+            <input type="date" name="birthday" value="2018-01-01" />
+            <br/>
+            爱好：
+            <input type="checkbox" name="hobby" value="football" /> 足球
+            <input type="checkbox" name="hobby" value="basketball" /> 蓝球
+            <input type="checkbox" name="hobby" value="ping-pang" checked="checked" /> 乒乓球
+            <br/>
+            年龄：
+            <select name="age">
+                <option value="1">0 ~ 10</option>
+                <option value="2">11 ~ 30</option>
+                <option value="3">31 ~ 60</option>
+                <option value="4">60 ~ 90</option>
+                <option value="5" selected="selected">90 ~ </option>
+            </select>
+            <br/>
+            简介：
+            <textarea name="desc">我是描述，  可以多行，可以多行，可以多行</textarea>
+            <br/>
+            <input type="submit" value="登陆"/>
+            <input type="button" value="普通按钮"/>
+        </form>
+
+    </body>
+</html>

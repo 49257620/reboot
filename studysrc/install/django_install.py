@@ -67,4 +67,7 @@ urlpatterns = [
 启动app
 python3 manage.py runserver 0.0.0.0:8888
 python3 manage.py runserver  默认8000端口
+
+启动app 并输入到日志 nohup.out 并开始追踪日志
+nohup python3 manage.py runserver 0.0.0.0:8888 &tail -f nohup.out
 """

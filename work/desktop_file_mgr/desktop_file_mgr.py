@@ -28,13 +28,14 @@ for f in files:
     except Exception as e:
         print('失败：', e, f[2], time.strftime("%Y-%m-%d", f[3]))
 
-        # print(time.strftime("%Y-%m-%d %H:%M:%S", f[2]))
 
-if not os.path.exists(target_path + os.sep + '2018'):
-    os.mkdir(target_path + os.sep + '2018')
+
+
 
 """
-
+        # print(time.strftime("%Y-%m-%d %H:%M:%S", f[2]))
+if not os.path.exists(target_path + os.sep + '2018'):
+    os.mkdir(target_path + os.sep + '2018')
 
 print(time.localtime())
 

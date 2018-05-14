@@ -23,7 +23,7 @@ def get_dif_policy_no():
 
     print('\t IDG 数量：', len(idg_set), end='')
 
-    sql_hic = "select BUSINESSNO from Prpepolicystate where state=3 and (BUSINESSNO like '827%' or BUSINESSNO like '829%') and  TRADEDATE LIKE '2018%'  AND  to_date(TRADEDATE,'YYYY-MM-DD HH24-MI-SS') >= TO_DATE(TO_CHAR(SYSDATE,'YYYYMMDD')||'000000','YYYYMMDDHH24MISS') AND to_date(TRADEDATE,'YYYY-MM-DD HH24-MI-SS') < (SYSDATE-10/24/60) "
+    sql_hic = "select BUSINESSNO from Prpepolicystate where state='3' and (BUSINESSNO like '827%' or BUSINESSNO like '829%') and  TRADEDATE LIKE '2018%'  AND  to_date(TRADEDATE,'YYYY-MM-DD HH24-MI-SS') >= TO_DATE(TO_CHAR(SYSDATE,'YYYYMMDD')||'000000','YYYYMMDDHH24MISS') AND to_date(TRADEDATE,'YYYY-MM-DD HH24-MI-SS') < (SYSDATE-10/24/60) "
 
     hic_data = oracle_conn.find_all(sql_hic)
 

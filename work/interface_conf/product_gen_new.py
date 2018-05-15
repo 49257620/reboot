@@ -221,7 +221,7 @@ seq_no = 1;
 
 out_file = open('./sql_script/' + RISK_CODE + "_" + PRODCUT_CODE + "_" + PRODCUT_NAME + '_PRODUCT.sql', 'wt',
                 encoding='utf-8')
-
+out_file.write("SET DEFINE OFF;\n")
 out_file.write("/****\n")
 
 out_file.write("""

@@ -1,4 +1,4 @@
-#encoding: utf-8
+# encoding: utf-8
 
 '''
 create table accesslog(
@@ -15,14 +15,13 @@ from datetime import datetime
 import MySQLdb
 
 params = {
-    'host' : '47.104.188.243',
-    'port' : 3306,
-    'db' : 'cmdb_lw',
-    'user' : 'root',
-    'passwd' : '1qaz@WSX',
-    'charset' : 'utf8'
+    'host': '47.104.188.243',
+    'port': 3306,
+    'db': 'cmdb_lw',
+    'user': 'root',
+    'passwd': '1qaz@WSX',
+    'charset': 'utf8'
 }
-
 
 SQL = 'INSERT INTO accesslog(logtime, ip, url, status) VALUES(%s, %s, %s, %s);'
 
@@ -40,7 +39,9 @@ if __name__ == '__main__':
                 nodes[6],
                 nodes[8],
             )
+
             cnt += cursor.execute(SQL, args)
+            print(cnt)
             if cnt % 5000 == 0:
                 conn.commit()
 

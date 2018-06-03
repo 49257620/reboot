@@ -4,7 +4,7 @@
 
 """
 import time
-tt =  bbb[3][2:] # '3/Aug/2014:00:01:42'
+tt =  bbb[3][1:] # '3/Aug/2014:00:01:42'
 time.strptime(tt,"%d/%b/%Y:%H:%M:%S")
 
 %y 两位数的年份表示（00-99）

@@ -4,7 +4,7 @@
 import cx_Oracle as orcl
 
 
-DB_CONF = 'hicuat/hicuat@sinodb'
+DB_CONF = 'hicis/hicis@sinodb'
 
 def find_all(sql):
     conn = orcl.connect(DB_CONF)

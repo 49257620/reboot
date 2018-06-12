@@ -1115,47 +1115,25 @@ and a.PRODUCTCODE = b.PRODUCTCODE""".format(plan_code)
 
 row = hicis.find_one(sql)
 
-if row:
-    chk_product_code = row[0]
-    chk_product_name = row[1]
-    chk_plan_code = row[2]
-    chk_plan_name = row[3]
-    chk_plan_sum_amount = row[4]
-    print("1.方案代码：输入：", plan_code)
-    print('\tV 产品代码：', chk_product_code, '\n\tV 产品名称：', chk_product_name, '\n\tV 方案代码：', chk_plan_code, '\n\tV 方案名称：',
-          chk_plan_name,
-          '\n\tV 单人保额：', chk_plan_sum_amount)
 
-    print("2.保额检查：输入：", sum_amount)
-
-    if sum_amount == chk_plan_sum_amount * insured_cnt:
-        print('\tV 检查结果：', '符合', chk_plan_sum_amount, '*', insured_cnt,
-              '=', sum_amount)
-    else:
-        print('\tX 检查结果：', '不符合', chk_plan_sum_amount, '*', insured_cnt,
-              '=', chk_plan_sum_amount * insured_cnt)
-
-    print("3.保费检查：输入：", sum_premium)
-    chk_sum_premium = 0.0
-    insured_idx = 1
-    for insured in insured_list:
-        sql = """select SUM(PREMIUM) from prpdratedate
+print("3.保费检查：输入：", sum_premium)
+chk_sum_premium = 0.0
+insured_idx = 1
+for insured in insured_list:
+    sql = """select SUM(PREMIUM) from prpdratedate
 where PLANCODE='{0}'
 and TERMMINVALUE <= {1} AND TERMMAXVALUE >={1}
 and AGEMINVALUE <= {2} AND AGEMAXVALUE>={2}
-        """.format(plan_code,  days,int(insured.find('age').text))
-        row = hicis.find_one(sql)
-        chk_sum_premium += row[0]
-        print('\t\t {3:3d} 姓名：{0:5s} 年龄：{1:^3d} 保费：{2}  天数:{4}'.format(insured.find('insuredName').text, int(insured.find('age').text),row[0],insured_idx,days))
-        insured_idx +=1
-    if round(chk_sum_premium,2) == sum_premium :
-        print('\tV 检查结果：', '符合', sum_premium)
-    else:
-        print('\tX 检查结果：', '不符合','合计人数：',insured_cnt, ' 输入：',sum_premium,'方案：',round(chk_sum_premium,2))
-
-
+    """.format('27110024',  days,int(insured.find('age').text))
+    row = hicis.find_one(sql)
+    chk_sum_premium += row[0]
+    print('\t\t {3:3d} 姓名：{0:5s} 年龄：{1:^3d} 保费：{2}  天数:{4}'.format(insured.find('insuredName').text, int(insured.find('age').text),row[0],insured_idx,days))
+    insured_idx +=1
+if round(chk_sum_premium,2) == sum_premium :
+    print('\tV 检查结果：', '符合', sum_premium)
 else:
-    print("方案不存在")
+    print('\tX 检查结果：', '不符合','合计人数：',insured_cnt, ' 输入：',sum_premium,'方案：',round(chk_sum_premium,2))
+
 
 
 # sql = 'SELECT * FROM prpcmain where rownum<10'

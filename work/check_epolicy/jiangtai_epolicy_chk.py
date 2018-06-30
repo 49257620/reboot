@@ -42,6 +42,8 @@ def run_webservice(proposal_date):
     from suds.client import Client
     client = Client(WSDL_URL)
     # print(client)
+    client.set_options(location='http://122.200.121.148/wsservice/ElectronicpolicyService')
+    client.wsdl.services
 
     policyInfo = {}
     policyInfo['agentCode'] = proposal_date[1]

@@ -8,1077 +8,1136 @@ import math
 import dbmanager as hicis
 
 xml_str = """<root>
-<agentCode>M00000000008</agentCode>
-	<arbitBoardName>北京市仲裁委员会</arbitBoardName>
-	<autoTransRenewFlag>3</autoTransRenewFlag>
-	<businessNature>8</businessNature>
-	<classCode>27</classCode>
-	<endDate>2018-06-15T23:59:59</endDate>
-	<operateDate>2018-06-10T13:43:54.68</operateDate>
-	<orderId>FH180610134023518923</orderId>
-	<planCode>2711002</planCode>
-	<planFeeInfo>
-		<currency>CNY</currency>
-		<delinquentFee>676.8800</delinquentFee>
-		<payNo>1</payNo>
-		<payReason>R10</payReason>
-		<planFee>676.8800</planFee>
-		<serialNo>1</serialNo>
-	</planFeeInfo>
-	<policySort>0</policySort>
-	<policyType>2</policyType>
-	<profit1>1</profit1>
-	<profit1Value>0.95</profit1Value>
-	<profit2>1</profit2>
-	<profit2Value>0.95</profit2Value>
-	<proposalAppliInfo>
-		<account />
-		<bank />
-		<email>yeyequna@163.com</email>
-		<identifyNumber>911307023360900627</identifyNumber>
-		<identifyType>99</identifyType>
-		<insuredAddress>河北省张家口市桥东区工业街新天都酒店底商（市粮食局对面）</insuredAddress>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>张家口市国际旅行社</insuredName>
-		<insuredNature>4</insuredNature>
-		<invoicetype />
-		<linkerName>李婷</linkerName>
-		<mobile>13833321560</mobile>
-		<nationalityCode>CHN</nationalityCode>
-		<phoneNumber>13833321560</phoneNumber>
-		<postAddress>河北省张家口市桥东区工业街新天都酒店底商（市粮食局对面）</postAddress>
-		<postCode>000000</postCode>
-		<sex />
-		<taxPayerNum>911307023360900627</taxPayerNum>
-	</proposalAppliInfo>
-	<proposalInsuredInfoList>
-		<account />
-		<age>64</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1954-04-06T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>EB4420290</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>王建忠</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5858</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>63</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1954-08-29T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>EB4424326</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>高秀梅</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5859</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>67</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1951-05-06T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>EB5987268</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>李盛</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5860</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>60</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1957-12-26T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>EB5984340</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>张润来</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5861</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>55</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1962-10-27T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>EC1856723</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>刘国斌</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5862</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>55</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1963-03-30T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>EC3063125</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>胡树清</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5863</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>64</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1954-05-22T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0882554</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>张儒生</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5864</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>59</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1959-02-18T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0885196</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>梁桂平</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5865</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>56</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1961-10-30T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0885195</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>刘丽艳</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5866</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>58</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1960-04-28T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0888335</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>李秀平</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5867</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>59</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1959-03-27T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0888336</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>刘佃斌</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5868</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>59</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1959-03-26T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0885181</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>倪雅均</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5869</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>61</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1956-08-06T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0882600</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>张建</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5870</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>51</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1966-10-11T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED1931733</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>张宝莲</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5871</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>52</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1966-04-07T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED1931732</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>孙建敏</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5872</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>55</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1963-04-06T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0888333</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>杨改珍</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5873</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>69</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1949-06-09T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0882129</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>郭亮</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5874</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>59</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1958-07-03T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0888334</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>周增君</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5875</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>62</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1956-01-30T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0885182</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>温熙瑞</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5876</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>52</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1965-06-18T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED1936064</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>李丽华</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5877</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>72</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1945-10-25T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED1954685</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>周万银</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5878</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>55</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1962-07-24T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>E66109316</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>赵金花</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5879</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>52</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1965-08-27T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>E63066897</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>张学英</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5880</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>64</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1953-07-24T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED1954682</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>高惠荣</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5881</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>61</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1956-12-20T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0888659</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>高喜英</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5882</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>76</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1942-01-27T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>ED0888660</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>李玉衡</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5883</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>1</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>65</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1952-10-04T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>E64071081</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>柳晓娟</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5884</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<proposalInsuredInfoList>
-		<account />
-		<age>29</age>
-		<bank />
-		<benefitFlag />
-		<benefitRate>0</benefitRate>
-		<birthDate>1988-11-02T00:00:00</birthDate>
-		<email>*</email>
-		<identifyNumber>E91429757</identifyNumber>
-		<identifyType>03</identifyType>
-		<insuredAddress>中国</insuredAddress>
-		<insuredFlag>1</insuredFlag>
-		<insuredIdentity>99</insuredIdentity>
-		<insuredName>韩梅</insuredName>
-		<insuredNature>3</insuredNature>
-		<linkerName />
-		<mobile />
-		<nationalityCode>CHN</nationalityCode>
-		<occupationCode>*</occupationCode>
-		<phoneNumber>*</phoneNumber>
-		<postAddress />
-		<postCode>000000</postCode>
-		<relateSerialNo>5885</relateSerialNo>
-		<serialNo>1</serialNo>
-		<sex>0</sex>
-	</proposalInsuredInfoList>
-	<requestInfo>
-		<password>zYjv9SSB</password>
-		<transcationCode>FH180610134023518923</transcationCode>
-		<user>jiangtai</user>
-	</requestInfo>
-	<riskCode>2711</riskCode>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<riskInfoList>
-		<amount>0</amount>
-		<compensateFlag />
-		<kindCode />
-		<netPremium>0</netPremium>
-		<premium>0</premium>
-		<standPremium>0</standPremium>
-		<taxFee>0</taxFee>
-		<taxRate>0</taxRate>
-	</riskInfoList>
-	<startDate>2018-06-11T12:00:00</startDate>
-	<sumAmount>38746400</sumAmount>
-	<sumPremium>676.88</sumPremium>
-	<sumQuantity>28</sumQuantity>
-	<travelInfo>
-		<destinationArea>韩国</destinationArea>
-		<destinationCountry>KOR</destinationCountry>
-		<guideEmail />
-		<guideName />
-		<guidePhone />
-		<leaveTime>2018-06-11T00:00:00</leaveTime>
-		<trafficNumber>*</trafficNumber>
-		<travelNO>2018.06.11</travelNO>
-	</travelInfo>
+<agentCode>M00000000047</agentCode>
+				<businessNature>8</businessNature>
+				<classCode>27</classCode>
+				<startDate>2018-07-22T00:00:00</startDate>
+				<endDate>2018-07-31T23:59:59</endDate>
+				<operateDate>2018-07-03T12:23:59</operateDate>
+				<orderId>180703122208176289</orderId>
+				<planCode>P272017ZXTX000102</planCode>
+				<policySort>0</policySort>
+				<policyType>2</policyType>
+				<riskCode>2711</riskCode>
+				<sumAmount>44736700</sumAmount>
+				<sumPremium>4292.00</sumPremium>
+				<planFeeInfo>
+					<currency>CNY</currency>
+					<delinquentFee>4292.00</delinquentFee>
+					<payNo>1</payNo>
+					<payReason>R10</payReason>
+					<planFee>4292.00</planFee>
+					<serialNo>1</serialNo>
+				</planFeeInfo>
+				<sumQuantity>37</sumQuantity>
+				<proposalAppliInfo>
+					<identifyNumber>91500000MA5YTM6Y1R</identifyNumber>
+					<identifyType>99</identifyType>
+					<insuredName>重庆嵘之道体育文化传播有限公司</insuredName>
+					<phoneNumber>13573228780</phoneNumber>
+					<birthDate/>
+					<postAddress/>
+					<identifyDate>2030-01-01</identifyDate>
+					<insuredNature>4</insuredNature>
+					<insuredAddress/>
+					<insuredIdentity/>
+					<sex/>
+					<mobile/>
+					<email>phmmail@163.com</email>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+				</proposalAppliInfo>
+				<proposalInsuredInfoList>
+					<age>22</age>
+					<birthDate>1995-12-03</birthDate>
+					<identifyNumber>E58523118</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>王靖奇</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>0</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>0</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>18</age>
+					<birthDate>1999-08-29</birthDate>
+					<identifyNumber>EB8897625</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>蒋哲岩</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>1</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>1</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>22</age>
+					<birthDate>1996-02-06</birthDate>
+					<identifyNumber>E79938222</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>黄官勇</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>2</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>2</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>25</age>
+					<birthDate>1993-05-17</birthDate>
+					<identifyNumber>EB8909264</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>王春顺</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>3</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>3</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>19</age>
+					<birthDate>1998-09-19</birthDate>
+					<identifyNumber>EB8638453</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>谢沛含</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>4</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>4</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>25</age>
+					<birthDate>1993-07-06</birthDate>
+					<identifyNumber>EB8928176</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>冉明阳</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>5</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>5</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>19</age>
+					<birthDate>1998-07-31</birthDate>
+					<identifyNumber>EB8911372</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>刘锦泉</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>6</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>6</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>24</age>
+					<birthDate>1994-04-07</birthDate>
+					<identifyNumber>E29311078</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>张亨</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>7</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>7</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>21</age>
+					<birthDate>1997-02-09</birthDate>
+					<identifyNumber>E63835739</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>张港</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>8</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>8</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>21</age>
+					<birthDate>1997-02-28</birthDate>
+					<identifyNumber>ED3422160</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>汤志勇</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>9</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>9</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>23</age>
+					<birthDate>1994-07-21</birthDate>
+					<identifyNumber>EB8898600</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>张茂鑫</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>10</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>10</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>18</age>
+					<birthDate>1999-10-14</birthDate>
+					<identifyNumber>EA5139336</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>李天月</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>11</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>11</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>18</age>
+					<birthDate>1999-08-10</birthDate>
+					<identifyNumber>EA9249269</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>王桢妮</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>12</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>12</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>19</age>
+					<birthDate>1998-09-26</birthDate>
+					<identifyNumber>EA7839471</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>刘远扬</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>13</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>13</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>21</age>
+					<birthDate>1997-07-08</birthDate>
+					<identifyNumber>EB8909257</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>卢宗其</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>14</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>14</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>23</age>
+					<birthDate>1994-08-17</birthDate>
+					<identifyNumber>E34436729</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>孙一心</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>15</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>15</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>24</age>
+					<birthDate>1994-02-10</birthDate>
+					<identifyNumber>ED3442586</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>冉晓芬</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>16</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>16</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>25</age>
+					<birthDate>1993-01-29</birthDate>
+					<identifyNumber>G46795397</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>王宇泽</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>17</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>17</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>22</age>
+					<birthDate>1995-07-18</birthDate>
+					<identifyNumber>EB8903036</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>向秋红</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>18</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>18</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>18</age>
+					<birthDate>2000-01-05</birthDate>
+					<identifyNumber>EB8911371</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>刘子怡</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>19</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>19</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>24</age>
+					<birthDate>1994-03-28</birthDate>
+					<identifyNumber>E24907275</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>罗依菲</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>20</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>20</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>23</age>
+					<birthDate>1994-10-29</birthDate>
+					<identifyNumber>EA5873692</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>连心瑀</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>21</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>21</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>24</age>
+					<birthDate>1993-09-04</birthDate>
+					<identifyNumber>EB2792386</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>冯芸艺</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>22</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>22</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>22</age>
+					<birthDate>1996-02-06</birthDate>
+					<identifyNumber>EB8898599</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>喻琴</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>23</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>23</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>25</age>
+					<birthDate>1993-02-10</birthDate>
+					<identifyNumber>E75519128</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>李莉</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>24</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>24</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>23</age>
+					<birthDate>1994-08-28</birthDate>
+					<identifyNumber>EB7833822</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>陈丽</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>25</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>25</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>21</age>
+					<birthDate>1996-12-06</birthDate>
+					<identifyNumber>EB8895942</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>周璐</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>26</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>26</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>25</age>
+					<birthDate>1993-03-25</birthDate>
+					<identifyNumber>EC1591578</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>范雨婷</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>27</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>27</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>23</age>
+					<birthDate>1995-06-01</birthDate>
+					<identifyNumber>EB8893048</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>杨霞</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>28</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>28</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>24</age>
+					<birthDate>1993-08-20</birthDate>
+					<identifyNumber>EB8906166</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>陈娟</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>29</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>29</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>21</age>
+					<birthDate>1997-03-19</birthDate>
+					<identifyNumber>EB8909256</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>邓攀</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>30</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>30</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>22</age>
+					<birthDate>1996-05-22</birthDate>
+					<identifyNumber>E99237940</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>胡金燕</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>31</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>31</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>38</age>
+					<birthDate>1979-11-14</birthDate>
+					<identifyNumber>PE1401727</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>黄诚胤</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>32</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>32</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>55</age>
+					<birthDate>1963-03-07</birthDate>
+					<identifyNumber>PE0645357</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>许定国</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>33</serialNo>
+					<sex>1</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>33</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>22</age>
+					<birthDate>1995-12-17</birthDate>
+					<identifyNumber>EB8905929</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>刘静怡</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>34</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>34</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>23</age>
+					<birthDate>1994-12-02</birthDate>
+					<identifyNumber>G42725164</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>汝秀花</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>35</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>35</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<proposalInsuredInfoList>
+					<age>48</age>
+					<birthDate>1970-06-13</birthDate>
+					<identifyNumber>E03759860</identifyNumber>
+					<identifyType>03</identifyType>
+					<insuredFlag>1</insuredFlag>
+					<insuredIdentity>99</insuredIdentity>
+					<insuredName>吴群英</insuredName>
+					<insuredNature>3</insuredNature>
+					<phoneNumber/>
+					<serialNo>36</serialNo>
+					<sex>2</sex>
+					<identifyDate>2030-01-01</identifyDate>
+					<relateSerialNo>36</relateSerialNo>
+					<mobile/>
+					<email/>
+					<postAddress/>
+					<postCode/>
+					<bank/>
+					<account/>
+					<linkerName/>
+					<nationalityCode/>
+					<benefitFlag/>
+					<benefitRate>100</benefitRate>
+					<occupationCode/>
+					<insuredAddress/>
+				</proposalInsuredInfoList>
+				<requestInfo>
+					<password>zxtx1709</password>
+					<user>zhongxing</user>
+					<transcationCode>ZXTX-xiandai20180713140341634075</transcationCode>
+				</requestInfo>
+				<riskInfoList>
+					<amount>400000</amount>
+					<kindCode>2711C01</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>200000</amount>
+					<kindCode>2711F01</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>30000</amount>
+					<kindCode>2711F02</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>2500</amount>
+					<kindCode>2711F20</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>300000</amount>
+					<kindCode>2711F03</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>150000</amount>
+					<kindCode>2711F04</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>3000</amount>
+					<kindCode>2711F17</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>10000</amount>
+					<kindCode>2711F10</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>800</amount>
+					<kindCode>2711F13</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>800</amount>
+					<kindCode>2711F12</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>1000</amount>
+					<kindCode>2711F06</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>2000</amount>
+					<kindCode>2711F21</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>3000</amount>
+					<kindCode>2711F22</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>3000</amount>
+					<kindCode>2711F23</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>3000</amount>
+					<kindCode>2711F07</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<riskInfoList>
+					<amount>100000</amount>
+					<kindCode>2711F11</kindCode>
+					<premium>0</premium>
+				</riskInfoList>
+				<travelInfo>
+					<destinationArea>韩国</destinationArea>
+				</travelInfo>
+				<productCode>P272017ZXTX0001</productCode>
 </root>
 """
 

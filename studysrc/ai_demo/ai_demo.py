@@ -16,7 +16,7 @@ y = [0, 1, 1]  # training target
 clf = svm.SVC()  # class   
 clf.fit(X, y)  # training the svc model  
 result = clf.predict([2, 2]) # predict the target of testing samples   
-print result  # target 
+print(result)  # target
 
 
 """
@@ -53,4 +53,4 @@ $ sudo python setup.py install
 #! -*- coding:utf-8 -*-
 import jieba
 seg_list = jieba.cut("北京野生动物园轿车遭黑熊围堵")
-print "Default Mode:", ' '.join(seg_list)
+print("Default Mode:", ' '.join(seg_list))
